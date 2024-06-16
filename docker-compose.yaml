@@ -3,7 +3,7 @@ version: '3.8'
 services:
   web:
     build:
-      context: ./docker
+      context: ./config_odoo
       dockerfile: Dockerfile
     image: odoo:17.0
     depends_on:
