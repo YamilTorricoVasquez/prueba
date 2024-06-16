@@ -11,6 +11,8 @@ services:
       - ./config_odoo:/etc/odoo
       - ./dev_addons:/mnt/extra-addons
       - ./log:/var/log/odoo
+       - ./entrypoint.sh:/entrypoint.sh  # Montar entrypoint.sh en el contenedor
+      - ./wait-for-psql.py:/wait-for-psql.py  # Montar wait-for-psql.py en el contenedor
     environment:
       - POSTGRES_HOST=db
       - USER=odoo
