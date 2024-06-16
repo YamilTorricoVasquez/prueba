@@ -15,6 +15,7 @@ services:
       - POSTGRES_HOST=db
       - USER=odoo
       - PASSWORD=myodoo
+    entrypoint: ["sh", "/entrypoint.sh"]  # Esto es importante para ejecutar el script de espera
   db:
     image: postgres:latest
     environment:
