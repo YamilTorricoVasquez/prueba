@@ -5,12 +5,13 @@ COPY ./entrypoint.sh /
 COPY ./config_odoo/odoo.conf /etc/odoo/
 
 # Asignar permisos y montar los volúmenes
+USER root
 RUN chmod +x /entrypoint.sh \
-    && chown odoo /etc/odoo/odoo.conf \
+    && chown odoo:odoo /etc/odoo/odoo.conf \
     && mkdir -p /mnt/extra-addons \
-    && chown -R odoo /mnt/extra-addons \
+    && chown -R odoo:odoo /mnt/extra-addons \
     && mkdir -p /var/log/odoo \
-    && chown -R odoo /var/log/odoo
+    && chown -R odoo:odoo /var/log/odoo
 
 # Exponer Odoo services
 EXPOSE 8069 8071 8072
