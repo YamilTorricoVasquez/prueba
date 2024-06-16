@@ -1,27 +1,38 @@
-import sys
-import time
 import psycopg2
+import time
+import os
 
-def connect_to_postgres(host, user, password, port):
-    while True:
-        try:
-            conn = psycopg2.connect(
-                dbname='postgres',
-                user=user,
-                password=password,
-                host=host,
-                port=port
-            )
-            conn.close()
-            return
-        except psycopg2.OperationalError:
-            print('Postgres is unavailable - sleeping')
-            time.sleep(1)
+# Connection details
+db_host = os.getenv('HOST', 'db')
+db_port = os.getenv('PORT', '5432')
+db_user = os.getenv('USER', 'odoo')
+db_password = os.getenv('PASSWORD', 'myodoo')
 
-if __name__ == '__main__':
-    if len(sys.argv) != 5:
-        print("Usage: wait-for-psql.py <host> <user> <password> <port>")
-        sys.exit(1)
+# Retry parameters
+max_retries = 10
+wait_time = 5  # seconds
 
-    _, host, user, password, port = sys.argv
-    connect_to_postgres(host, user, password, port)
+def connect_to_postgres():
+    try:
+        conn = psycopg2.connect(
+            dbname='postgres',
+            user=db_user,
+            password=db_password,
+            host=db_host,
+            port=db_port
+        )
+        conn.close()
+        return True
+    except psycopg2.OperationalError:
+        return False
+
+for i in range(max_retries):
+    if connect_to_postgres():
+        print("PostgreSQL is up and running!")
+        exit(0)
+    else:
+        print(f"PostgreSQL is unavailable - sleeping for {wait_time} seconds...")
+        time.sleep(wait_time)
+
+print("Failed to connect to PostgreSQL after several attempts.")
+exit(1)
