@@ -1,7 +1,7 @@
 # Dockerfile para servicio web de Odoo
 
 # Utiliza la imagen base de Odoo 14.0
-FROM odoo:14.0
+FROM odoo:17.0
 
 # Instalación de dependencias adicionales, si es necesario
 RUN apt-get update && apt-get install -y \
