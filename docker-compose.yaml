@@ -12,7 +12,7 @@ services:
       - ./dev_addons:/mnt/extra-addons
       - ./log:/var/log/odoo
     environment:
-      - HOST=db
+      - POSTGRES_HOST=db
       - USER=odoo
       - PASSWORD=myodoo
   db:
