@@ -10,6 +10,7 @@ ENV LANG en_US.UTF-8
 ARG TARGETARCH
 
 # Install some deps, lessc and less-plugin-clean-css, and wkhtmltopdf
+
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive \
     apt-get install -y --no-install-recommends \
@@ -51,10 +52,7 @@ RUN apt-get update && \
     && apt-get install -y --no-install-recommends ./wkhtmltox.deb \
     && rm -rf /var/lib/apt/lists/* wkhtmltox.deb
 
-# Install rtlcss (on Debian buster)
-RUN npm install -g rtlcss
-
-# Install latest postgresql-client
+# install latest postgresql-client
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jammy-pgdg main' > /etc/apt/sources.list.d/pgdg.list \
     && GNUPGHOME="$(mktemp -d)" \
     && export GNUPGHOME \
@@ -68,6 +66,9 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jammy-pgdg main' > /etc/a
     && rm -f /etc/apt/sources.list.d/pgdg.list \
     && rm -rf /var/lib/apt/lists/*
 
+# Install rtlcss (on Debian buster)
+RUN npm install -g rtlcss
+
 # Install Odoo
 ENV ODOO_VERSION 17.0
 ARG ODOO_RELEASE=20240603
@@ -79,13 +80,22 @@ RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/od
     && rm -rf /var/lib/apt/lists/* odoo.deb
 
 # Copy entrypoint script and Odoo configuration file
-COPY entrypoint.sh /
-COPY odoo.conf /etc/odoo/
+COPY ./entrypoint.sh /
+COPY ./odoo.conf /etc/odoo/
 
 # Set permissions and Mount /var/lib/odoo to allow restoring filestore and /mnt/extra-addons for users addons
 RUN chown odoo /etc/odoo/odoo.conf \
     && mkdir -p /mnt/extra-addons \
     && chown -R odoo /mnt/extra-addons
+VOLUME ["/var/lib/odoo", "/mnt/extra-addons"]
+
+# Expose Odoo services
+EXPOSE 8069 8071 8072
+
+# Set the default config file
+ENV ODOO_RC /etc/odoo/odoo.conf
+
+COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py
 
 # Set default user when running the container
 USER odoo
