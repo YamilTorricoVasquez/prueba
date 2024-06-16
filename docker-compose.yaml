@@ -19,7 +19,7 @@ services:
       - HOST=db
       - USER=odoo
       - PASSWORD=myodoo
-
+    command: ["./wait-for-it.sh", "db:5432", "--", "/entrypoint.sh", "odoo"]
   db:
     image: postgres:latest
     environment:
