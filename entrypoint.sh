@@ -2,8 +2,8 @@
 
 set -e
 
-# Wait for PostgreSQL to be available
-python3 /wait-for-psql.py
+# Esperar a que esté disponible PostgreSQL
+python3 /usr/local/bin/wait-for-psql.py
 
-# Start Odoo
-exec odoo
+# Iniciar Odoo
+exec odoo -c $ODOO_RC

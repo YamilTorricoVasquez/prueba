@@ -1,38 +1,24 @@
+#!/usr/bin/env python3
+import sys
 import psycopg2
-import time
-import os
+from time import sleep
 
-# Connection details
-db_host = os.getenv('HOST', 'db')
-db_port = os.getenv('PORT', '5432')
-db_user = os.getenv('USER', 'odoo')
-db_password = os.getenv('PASSWORD', 'myodoo')
+def wait_for_postgres():
+    dbname = 'postgres'
+    user = 'odoo'
+    password = 'myodoo'
+    host = 'db'
+    port = '5432'
 
-# Retry parameters
-max_retries = 10
-wait_time = 5  # seconds
+    while True:
+        try:
+            conn = psycopg2.connect(dbname=dbname, user=user, password=password, host=host, port=port)
+            conn.close()
+            print("PostgreSQL is ready")
+            return
+        except psycopg2.OperationalError:
+            print("Waiting for PostgreSQL...")
+            sleep(2)
 
-def connect_to_postgres():
-    try:
-        conn = psycopg2.connect(
-            dbname='postgres',
-            user=db_user,
-            password=db_password,
-            host=db_host,
-            port=db_port
-        )
-        conn.close()
-        return True
-    except psycopg2.OperationalError:
-        return False
-
-for i in range(max_retries):
-    if connect_to_postgres():
-        print("PostgreSQL is up and running!")
-        exit(0)
-    else:
-        print(f"PostgreSQL is unavailable - sleeping for {wait_time} seconds...")
-        time.sleep(wait_time)
-
-print("Failed to connect to PostgreSQL after several attempts.")
-exit(1)
+if __name__ == '__main__':
+    wait_for_postgres()
