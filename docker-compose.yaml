@@ -1,10 +1,6 @@
-version: '3.8'
-
+version: '3.1'
 services:
   web:
-    build:
-      context: ./config_odoo
-      dockerfile: Dockerfile
     image: odoo:17.0
     depends_on:
       - db
@@ -14,14 +10,13 @@ services:
       - odoo-web-data:/var/lib/odoo
       - ./config_odoo:/etc/odoo
       - ./dev_addons:/mnt/extra-addons
-      - ./log:/var/log/odoo
+      - /var/log/odoo:/var/log/odoo
     environment:
       - HOST=db
       - USER=odoo
       - PASSWORD=myodoo
-    command: ["./wait-for-it.sh", "db:5432", "--", "/entrypoint.sh", "odoo"]
   db:
-    image: postgres:latest
+    image: postgres:14.3
     environment:
       - POSTGRES_DB=postgres      
       - POSTGRES_PASSWORD=myodoo
@@ -29,7 +24,6 @@ services:
       - PGDATA=/var/lib/postgresql/data/pgdata
     volumes:
       - odoo-db-data:/var/lib/postgresql/data/pgdata
-
 volumes:
   odoo-web-data:
   odoo-db-data:
