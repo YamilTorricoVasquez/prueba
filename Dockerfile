@@ -20,7 +20,6 @@ RUN dnf -y update && dnf -y install \
 
 # Create necessary directories and set permissions
 RUN mkdir -p /var/log/odoo && \
-    touch /var/log/odoo/odoo.log && \
     chown -R odoo:root /var/log/odoo
 
 # Copy entrypoint script, Odoo configuration file, and wait-for-psql script

@@ -2,24 +2,26 @@ import sys
 import time
 import psycopg2
 
-def wait_for_psql(host, user, password):
+def connect_to_postgres(host, user, password, port):
     while True:
         try:
-            conn = psycopg2.connect(dbname='postgres', user=user, password=password, host=host)
+            conn = psycopg2.connect(
+                dbname='postgres',
+                user=user,
+                password=password,
+                host=host,
+                port=port
+            )
             conn.close()
-            break
+            return
         except psycopg2.OperationalError:
-            print("PostgreSQL is unavailable - sleeping")
+            print('Postgres is unavailable - sleeping')
             time.sleep(1)
-    print("PostgreSQL is up - continuing")
 
-if __name__ == "__main__":
-    if len(sys.argv) != 4:
-        print("Usage: wait-for-psql.py <host> <user> <password>")
+if __name__ == '__main__':
+    if len(sys.argv) != 5:
+        print("Usage: wait-for-psql.py <host> <user> <password> <port>")
         sys.exit(1)
 
-    host = sys.argv[1]
-    user = sys.argv[2]
-    password = sys.argv[3]
-
-    wait_for_psql(host, user, password)
+    _, host, user, password, port = sys.argv
+    connect_to_postgres(host, user, password, port)
