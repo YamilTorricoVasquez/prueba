@@ -1,6 +1,0 @@
-# Utiliza una imagen base de Odoo
-FROM odoo:latest
-
-# Agrega tus archivos personalizados, addons, etc.
-COPY ./mi_addon /mnt/extra-addons/mi_addon
-

@@ -1,0 +1,21 @@
+# Dockerfile para servicio web de Odoo
+
+# Utiliza la imagen base de Odoo 14.0
+FROM odoo:14.0
+
+# Instalación de dependencias adicionales, si es necesario
+RUN apt-get update && apt-get install -y \
+    nano \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copia los addons personalizados al directorio de addons de Odoo
+COPY ./addons /mnt/extra-addons
+
+# Copia el archivo de configuración personalizado
+COPY ./config/odoo.conf /etc/odoo/odoo.conf
+
+# Define el directorio de trabajo para Odoo
+WORKDIR /usr/lib/python3/dist-packages/odoo
+
+# Comando para ejecutar Odoo
+CMD ["odoo", "-c", "/etc/odoo/odoo.conf"]

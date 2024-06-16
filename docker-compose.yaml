@@ -1,9 +1,9 @@
 version: '3.8'
 services:
   web:
-   build:
-    context: .
-    dockerfile: Dockerfile
+    build:
+      context: ./docker
+      dockerfile: ./docker/Dockerfile
     image: odoo:17.0
     depends_on:
       - db
