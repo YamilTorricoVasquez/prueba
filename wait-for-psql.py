@@ -1,24 +1,24 @@
 #!/usr/bin/env python3
 import sys
 import psycopg2
+from urllib.parse import urlparse
 from time import sleep
 
-def wait_for_postgres():
-    dbname = 'postgres'
-    user = 'odoo'
-    password = 'myodoo'
-    host = 'db'
-    port = '5432'
-
-    while True:
+if __name__ == "__main__":
+    url = urlparse(sys.argv[1])
+    timeout = int(sys.argv[3]) if len(sys.argv) > 3 else 30
+    while timeout > 0:
         try:
-            conn = psycopg2.connect(dbname=dbname, user=user, password=password, host=host, port=port)
+            conn = psycopg2.connect(
+                dbname=url.path[1:],
+                user=url.username,
+                password=url.password,
+                host=url.hostname,
+                port=url.port
+            )
             conn.close()
-            print("PostgreSQL is ready")
-            return
+            sys.exit(0)
         except psycopg2.OperationalError:
-            print("Waiting for PostgreSQL...")
-            sleep(2)
-
-if __name__ == '__main__':
-    wait_for_postgres()
+            timeout -= 1
+            sleep(1)
+    sys.exit(1)
