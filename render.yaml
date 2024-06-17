@@ -2,58 +2,36 @@ services:
   - type: web
     name: odoo-web
     env: docker
+    repo: https://github.com/YamilTorricoVasquez/prueba.git
+    branch: main
     dockerfilePath: ./Dockerfile
-    buildCommand: ''
-    startCommand: ''
+    buildCommand: docker-compose build
+    startCommand: docker-compose up
     envVars:
-      - key: POSTGRES_HOST
-        value: odoo-db  # Nombre del servicio de la base de datos
-      - key: USER
+      - key: DB_HOST
+        value: db
+      - key: DB_PORT
+        value: "5432"
+      - key: DB_USER
         value: odoo
-      - key: PASSWORD
+      - key: DB_PASSWORD
         value: myodoo
-    mounts:
-      - type: volume
-        name: odoo-web-data
-        path: /var/lib/odoo
-      - type: volume
-        name: config_odoo
-        path: /etc/odoo
-      - type: volume
-        name: dev_addons
-        path: /mnt/extra-addons
-      - type: volume
-        name: log
-        path: /var/log/odoo
-      - type: volume
-        name: entrypoint-script
-        path: /entrypoint.sh
-      - type: volume
-        name: wait-for-psql-script
-        path: /usr/local/bin/wait-for-psql.py
-    dependsOn:
-      - odoo-db
-    plan: free  # Ajusta el plan según tus necesidades
-
-  - type: postgresql
-    name: odoo-db
-    plan: starter
-    properties:
-      databaseName: postgres
-      user: odoo
-      password: myodoo
-    envVars:
-      - key: POSTGRES_DB
+      - key: DB_NAME
         value: postgres
+
+  - type: database
+    name: odoo-db
+    env: docker
+    dockerfilePath: ./Dockerfile
+    buildCommand: docker-compose build
+    startCommand: docker-compose up
+    envVars:
       - key: POSTGRES_USER
         value: odoo
       - key: POSTGRES_PASSWORD
         value: myodoo
-
-volumes:
-  - name: odoo-web-data
-  - name: config_odoo
-  - name: dev_addons
-  - name: log
-  - name: entrypoint-script
-  - name: wait-for-psql-script
+      - key: POSTGRES_DB
+        value: postgres
+    volumes:
+      - name: postgres_data
+        path: /var/lib/postgresql/data
