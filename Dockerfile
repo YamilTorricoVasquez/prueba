@@ -7,6 +7,7 @@ COPY ./config_odoo/odoo.conf /etc/odoo/
 COPY wait-for-psql.py /wait-for-psql.py
 USER root
 RUN chmod +x /entrypoint.sh \
+    && chmod +x /wait-for-psql.py \
     && chown odoo:odoo /etc/odoo/odoo.conf \
     && mkdir -p /mnt/extra-addons \
     && chown -R odoo:odoo /mnt/extra-addons \
