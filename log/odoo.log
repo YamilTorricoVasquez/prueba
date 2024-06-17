@@ -495,3 +495,23 @@
 2024-06-17 13:37:13,030 1 INFO ? odoo.service.server: Initiating shutdown 
 2024-06-17 13:37:13,031 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
 2024-06-17 13:37:13,519 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 2 connections  
+2024-06-17 13:47:02,146 1 INFO ? odoo: Odoo version 17.0-20240603 
+2024-06-17 13:47:02,149 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-06-17 13:47:02,150 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-06-17 13:47:02,151 1 INFO ? odoo: database: odoo@db:5432 
+2024-06-17 13:47:02,373 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-06-17 13:47:02,878 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 98d3a380bdf8:8069 
+2024-06-17 13:47:50,314 1 INFO prueba odoo.modules.loading: loading 1 modules... 
+2024-06-17 13:47:50,383 1 INFO prueba odoo.modules.loading: 1 modules loaded in 0.05s, 0 queries (+0 extra) 
+2024-06-17 13:47:50,433 1 WARNING prueba odoo.modules.module: Missing `license` key in manifest for 'academico', defaulting to LGPL-3 
+2024-06-17 13:47:50,438 1 INFO prueba odoo.modules.loading: loading 12 modules... 
+2024-06-17 13:47:50,870 1 INFO prueba odoo.modules.loading: 12 modules loaded in 0.43s, 0 queries (+0 extra) 
+2024-06-17 13:47:51,010 1 WARNING prueba odoo.fields: Field academico.profesor.ci: unknown parameter 'unique', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-06-17 13:47:51,025 1 INFO prueba odoo.modules.loading: Modules loaded. 
+2024-06-17 13:47:51,078 1 INFO prueba odoo.modules.registry: Registry loaded in 1.139s 
+2024-06-17 13:47:51,083 1 INFO prueba odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-17 13:47:51,382 1 INFO prueba werkzeug: 172.24.0.1 - - [17/Jun/2024 13:47:51] "GET /websocket HTTP/1.1" 101 - 28 0.942 1.162
+2024-06-17 13:47:51,420 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-06-17 13:51:02,904 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-06-17 13:51:02,908 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-06-17 13:51:03,085 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 4 connections  
