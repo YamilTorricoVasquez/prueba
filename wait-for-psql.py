@@ -1,28 +1,24 @@
 #!/usr/bin/env python3
 import sys
-import time
-import socket
-
-def wait_for_postgres(host, port, timeout):
-    start_time = time.time()
-    while time.time() - start_time < timeout:
-        try:
-            sock = socket.create_connection((host, port))
-            sock.close()
-            return True
-        except socket.error:
-            time.sleep(1)
-    return False
+import psycopg2
+from urllib.parse import urlparse
+from time import sleep
 
 if __name__ == "__main__":
-    if len(sys.argv) != 4:
-        print("Usage: wait-for-psql.py <host> <port> <timeout>")
-        sys.exit(1)
-    host = sys.argv[1]
-    port = int(sys.argv[2])
-    timeout = int(sys.argv[3])
-    if wait_for_postgres(host, port, timeout):
-        sys.exit(0)
-    else:
-        print(f"Failed to connect to {host}:{port} within {timeout} seconds")
-        sys.exit(1)
+    db_host = sys.argv[1]
+    timeout = int(sys.argv[2]) if len(sys.argv) > 2 else 30
+    while timeout > 0:
+        try:
+            conn = psycopg2.connect(
+                dbname="postgres",
+                user="odoo",
+                password="myodoo",
+                host=db_host,
+                port=5432
+            )
+            conn.close()
+            sys.exit(0)
+        except psycopg2.OperationalError:
+            timeout -= 1
+            sleep(1)
+    sys.exit(1)

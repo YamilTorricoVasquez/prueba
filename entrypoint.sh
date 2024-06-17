@@ -1,8 +1,7 @@
-#!/bin/sh
-set -e
+#!/bin/bash
 
 # Esperar a que PostgreSQL esté listo
-/wait-for-psql.py "$POSTGRES_HOST" 5432 30
+/wait-for-psql.py db --timeout=30 -- echo "PostgreSQL is ready."
 
-# Ejecutar el comando original
+# Ejecutar Odoo
 exec "$@"
