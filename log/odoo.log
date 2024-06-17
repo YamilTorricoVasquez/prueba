@@ -486,3 +486,12 @@
 2024-06-17 13:01:18,803 1 INFO ? odoo.service.server: Initiating shutdown 
 2024-06-17 13:01:18,804 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
 2024-06-17 13:01:18,873 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 2 connections  
+2024-06-17 13:37:10,572 1 INFO ? odoo: Odoo version 17.0-20240603 
+2024-06-17 13:37:10,575 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-06-17 13:37:10,576 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-06-17 13:37:10,577 1 INFO ? odoo: database: odoo@db:5432 
+2024-06-17 13:37:10,729 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-06-17 13:37:11,015 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 903c4cfd82f5:8069 
+2024-06-17 13:37:13,030 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-06-17 13:37:13,031 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-06-17 13:37:13,519 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 2 connections  
