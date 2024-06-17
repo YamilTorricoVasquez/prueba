@@ -1,0 +1,5 @@
+services:
+  - name: odoo
+    env: docker
+    buildCommand: docker build -t odoo-render .
+    startCommand: docker run -p 8069:8069 odoo-render
