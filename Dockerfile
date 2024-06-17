@@ -2,8 +2,10 @@
 FROM odoo:17.0
 
 # Instalamos gnupg2 y wget para descargar claves y paquetes
-RUN apt-get update && \
-    apt-get install -y gnupg2 wget
+USER root
+RUN apt-get update && apt-get install -y gnupg2 wget && \
+    rm -rf /var/lib/apt/lists/* && mkdir -p /var/lib/apt/lists/partial && \
+    apt-get clean
 
 # Descargamos la clave de PostgreSQL y la agregamos
 RUN wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
