@@ -8,13 +8,14 @@ COPY ./config_odoo/odoo.conf /etc/odoo/odoo.conf
 EXPOSE 8069
 
 # Instalamos PostgreSQL y sus herramientas
-RUN dnf install -y postgresql-server postgresql-contrib && \
-    postgresql-setup --initdb
+RUN apt-get update && apt-get install -y postgresql postgresql-contrib
 
 # Configuramos la base de datos PostgreSQL
 USER postgres
-RUN /usr/bin/postgres --single -D /var/lib/pgsql/data -c config_file=/var/lib/pgsql/data/postgresql.conf <<< "CREATE USER odoo WITH SUPERUSER PASSWORD 'myodoo';" && \
-    /usr/bin/postgres --single -D /var/lib/pgsql/data -c config_file=/var/lib/pgsql/data/postgresql.conf <<< "CREATE DATABASE postgres OWNER odoo;"
+RUN /etc/init.d/postgresql start && \
+    psql --command "CREATE USER odoo WITH SUPERUSER PASSWORD 'myodoo';" && \
+    createdb -O odoo postgres && \
+    /etc/init.d/postgresql stop
 
 # Cambiamos nuevamente al usuario odoo
 USER odoo
