@@ -18,6 +18,9 @@ services:
         value: myodoo
       - key: DB_NAME
         value: postgres
+    ports:
+      - name: odoo-port
+        port: 8069
 
   - type: database
     name: odoo-db

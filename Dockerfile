@@ -29,7 +29,7 @@ RUN chmod +x /entrypoint.sh \
     && chown -R odoo:odoo /var/log/odoo
 
 # Exponer Odoo services
-EXPOSE 8069 8071 8072
+EXPOSE 8069
 
 # Set the default config file
 ENV ODOO_RC /etc/odoo/odoo.conf
