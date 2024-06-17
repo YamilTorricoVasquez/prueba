@@ -18,6 +18,8 @@ services:
       - USER=odoo
       - PASSWORD=myodoo
     entrypoint: ["/wait-for-psql.py", "db:5432", "30", "--", "/entrypoint.sh", "odoo"]  # Aquí se espera a que "db" esté disponible en el puerto 5432
+    networks:
+      - odoo_network
   db:
     image: postgres:latest
     ports:
@@ -27,8 +29,13 @@ services:
       - POSTGRES_PASSWORD=myodoo
       - POSTGRES_USER=odoo
       - PGDATA=/var/lib/postgresql/data/pgdata
+    networks:
+      - odoo_network
     volumes:
       - odoo-db-data:/var/lib/postgresql/data/pgdata
 volumes:
   odoo-web-data:
   odoo-db-data:
+networks:
+  odoo_network:
+    driver: bridge
