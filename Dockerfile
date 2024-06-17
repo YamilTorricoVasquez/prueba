@@ -1,5 +1,8 @@
 FROM odoo:17.0
 
+# Instalar psycopg2-binary si es necesario
+USER root
+RUN pip install psycopg2-binary
 # Copiar los archivos de configuración y scripts
 COPY ./entrypoint.sh /entrypoint.sh
 COPY ./config_odoo/odoo.conf /etc/odoo/odoo.conf
