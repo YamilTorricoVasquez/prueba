@@ -7,3 +7,439 @@
 2024-06-17 12:25:06,002 1 INFO ? odoo.service.server: Initiating shutdown 
 2024-06-17 12:25:06,003 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
 2024-06-17 12:25:06,215 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 2 connections  
+2024-06-17 12:32:43,163 1 INFO ? odoo: Odoo version 17.0-20240603 
+2024-06-17 12:32:43,165 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-06-17 12:32:43,165 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-06-17 12:32:43,166 1 INFO ? odoo: database: odoo@db:5432 
+2024-06-17 12:32:43,291 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-06-17 12:32:43,508 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 8ef8f37609e4:8069 
+2024-06-17 12:32:44,294 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-06-17 12:32:44,295 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-06-17 12:32:44,512 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 2 connections  
+2024-06-17 12:33:54,657 1 INFO ? odoo: Odoo version 17.0-20240603 
+2024-06-17 12:33:54,658 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-06-17 12:33:54,658 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-06-17 12:33:54,659 1 INFO ? odoo: database: odoo@db:5432 
+2024-06-17 12:33:54,822 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-06-17 12:33:55,110 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on c6f86147654b:8069 
+2024-06-17 12:35:19,097 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-06-17 12:35:19,100 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-06-17 12:35:19,231 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 2 connections  
+2024-06-17 12:37:00,770 1 INFO ? odoo: Odoo version 17.0-20240603 
+2024-06-17 12:37:00,772 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-06-17 12:37:00,772 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-06-17 12:37:00,773 1 INFO ? odoo: database: odoo@db:5432 
+2024-06-17 12:37:00,980 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-06-17 12:37:01,493 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on acdb812938e5:8069 
+2024-06-17 12:37:13,841 1 INFO ? werkzeug: 172.22.0.1 - - [17/Jun/2024 12:37:13] "GET /web/service-worker.js HTTP/1.1" 404 - 1 0.112 0.172
+2024-06-17 12:37:34,597 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'academico', defaulting to LGPL-3 
+2024-06-17 12:37:35,181 1 INFO None odoo.service.db: Create database `prueba`. 
+2024-06-17 12:37:42,045 1 INFO prueba odoo.modules.loading: loading 1 modules... 
+2024-06-17 12:37:42,048 1 INFO prueba odoo.modules.loading: Loading module base (1/1) 
+2024-06-17 12:37:42,256 1 INFO prueba odoo.modules.registry: module base: creating or updating database tables 
+2024-06-17 12:37:43,574 1 INFO prueba odoo.models: Prepare computation of ir.module.module.menus_by_module 
+2024-06-17 12:37:43,575 1 INFO prueba odoo.models: Prepare computation of ir.module.module.reports_by_module 
+2024-06-17 12:37:43,575 1 INFO prueba odoo.models: Prepare computation of ir.module.module.views_by_module 
+2024-06-17 12:37:44,033 1 INFO prueba odoo.models: Prepare computation of res.partner.user_id 
+2024-06-17 12:37:44,034 1 INFO prueba odoo.models: Prepare computation of res.partner.commercial_partner_id 
+2024-06-17 12:37:44,035 1 INFO prueba odoo.models: Prepare computation of res.partner.complete_name 
+2024-06-17 12:37:44,035 1 INFO prueba odoo.models: Prepare computation of res.partner.company_registry 
+2024-06-17 12:37:44,036 1 INFO prueba odoo.models: Prepare computation of res.partner.commercial_company_name 
+2024-06-17 12:37:44,036 1 INFO prueba odoo.models: Prepare computation of res.partner.partner_share 
+2024-06-17 12:37:44,199 1 INFO prueba odoo.models: Prepare computation of res.currency.decimal_places 
+2024-06-17 12:37:44,307 1 INFO prueba odoo.models: Prepare computation of res.company.uses_default_logo 
+2024-06-17 12:37:44,308 1 INFO prueba odoo.models: Prepare computation of res.company.logo_web 
+2024-06-17 12:37:44,317 1 INFO prueba odoo.models: Computing parent_path for table res_company... 
+2024-06-17 12:37:44,409 1 INFO prueba odoo.models: Prepare computation of res.users.signature 
+2024-06-17 12:37:44,410 1 INFO prueba odoo.models: Prepare computation of res.users.share 
+2024-06-17 12:37:48,499 1 INFO prueba odoo.modules.loading: loading base/data/res_bank.xml 
+2024-06-17 12:37:48,518 1 INFO prueba odoo.modules.loading: loading base/data/res.lang.csv 
+2024-06-17 12:37:48,610 1 INFO prueba odoo.modules.loading: loading base/data/res_lang_data.xml 
+2024-06-17 12:37:48,694 1 INFO prueba odoo.modules.loading: loading base/data/res_partner_data.xml 
+2024-06-17 12:37:48,805 1 INFO prueba odoo.modules.loading: loading base/data/res_currency_data.xml 
+2024-06-17 12:37:49,869 1 INFO prueba odoo.modules.loading: loading base/data/res_company_data.xml 
+2024-06-17 12:37:49,885 1 INFO prueba odoo.modules.loading: loading base/data/res_users_data.xml 
+2024-06-17 12:37:51,107 1 INFO prueba odoo.modules.loading: loading base/data/report_paperformat_data.xml 
+2024-06-17 12:37:51,124 1 INFO prueba odoo.modules.loading: loading base/data/res_country_data.xml 
+2024-06-17 12:37:52,119 1 INFO prueba odoo.modules.loading: loading base/data/ir_demo_data.xml 
+2024-06-17 12:37:52,178 1 INFO prueba odoo.modules.loading: loading base/security/base_groups.xml 
+2024-06-17 12:37:52,576 1 INFO prueba odoo.modules.loading: loading base/security/base_security.xml 
+2024-06-17 12:37:52,792 1 INFO prueba odoo.modules.loading: loading base/views/base_menus.xml 
+2024-06-17 12:37:52,954 1 INFO prueba odoo.modules.loading: loading base/views/decimal_precision_views.xml 
+2024-06-17 12:37:52,985 1 INFO prueba odoo.modules.loading: loading base/views/res_config_views.xml 
+2024-06-17 12:37:53,001 1 INFO prueba odoo.modules.loading: loading base/data/res.country.state.csv 
+2024-06-17 12:37:54,666 1 INFO prueba odoo.modules.loading: loading base/views/ir_actions_views.xml 
+2024-06-17 12:37:54,880 1 INFO prueba odoo.modules.loading: loading base/views/ir_asset_views.xml 
+2024-06-17 12:37:54,905 1 INFO prueba odoo.modules.loading: loading base/views/ir_config_parameter_views.xml 
+2024-06-17 12:37:54,931 1 INFO prueba odoo.modules.loading: loading base/views/ir_cron_views.xml 
+2024-06-17 12:37:54,974 1 INFO prueba odoo.modules.loading: loading base/views/ir_cron_trigger_views.xml 
+2024-06-17 12:37:55,003 1 INFO prueba odoo.modules.loading: loading base/views/ir_filters_views.xml 
+2024-06-17 12:37:55,037 1 INFO prueba odoo.modules.loading: loading base/views/ir_mail_server_views.xml 
+2024-06-17 12:37:55,070 1 INFO prueba odoo.modules.loading: loading base/views/ir_model_views.xml 
+2024-06-17 12:37:55,322 1 INFO prueba odoo.modules.loading: loading base/views/ir_attachment_views.xml 
+2024-06-17 12:37:55,366 1 INFO prueba odoo.modules.loading: loading base/views/ir_rule_views.xml 
+2024-06-17 12:37:55,409 1 INFO prueba odoo.modules.loading: loading base/views/ir_sequence_views.xml 
+2024-06-17 12:37:55,444 1 INFO prueba odoo.modules.loading: loading base/views/ir_ui_menu_views.xml 
+2024-06-17 12:37:55,481 1 INFO prueba odoo.modules.loading: loading base/views/ir_ui_view_views.xml 
+2024-06-17 12:37:55,561 1 INFO prueba odoo.modules.loading: loading base/views/ir_default_views.xml 
+2024-06-17 12:37:55,593 1 INFO prueba odoo.modules.loading: loading base/data/ir_cron_data.xml 
+2024-06-17 12:37:55,615 1 INFO prueba odoo.modules.loading: loading base/report/ir_model_report.xml 
+2024-06-17 12:37:55,626 1 INFO prueba odoo.modules.loading: loading base/report/ir_model_templates.xml 
+2024-06-17 12:37:55,639 1 INFO prueba odoo.modules.loading: loading base/views/ir_logging_views.xml 
+2024-06-17 12:37:55,667 1 INFO prueba odoo.modules.loading: loading base/views/ir_qweb_widget_templates.xml 
+2024-06-17 12:37:55,685 1 INFO prueba odoo.modules.loading: loading base/views/ir_module_views.xml 
+2024-06-17 12:37:55,758 1 INFO prueba odoo.modules.loading: loading base/data/ir_module_category_data.xml 
+2024-06-17 12:37:55,872 1 INFO prueba odoo.modules.loading: loading base/data/ir_module_module.xml 
+2024-06-17 12:37:55,997 1 INFO prueba odoo.modules.loading: loading base/report/ir_module_reports.xml 
+2024-06-17 12:37:56,004 1 INFO prueba odoo.modules.loading: loading base/report/ir_module_report_templates.xml 
+2024-06-17 12:37:56,013 1 INFO prueba odoo.modules.loading: loading base/wizard/base_module_update_views.xml 
+2024-06-17 12:37:56,032 1 INFO prueba odoo.modules.loading: loading base/wizard/base_language_install_views.xml 
+2024-06-17 12:37:56,062 1 INFO prueba odoo.modules.loading: loading base/wizard/base_import_language_views.xml 
+2024-06-17 12:37:56,082 1 INFO prueba odoo.modules.loading: loading base/wizard/base_module_upgrade_views.xml 
+2024-06-17 12:37:56,111 1 INFO prueba odoo.modules.loading: loading base/wizard/base_module_uninstall_views.xml 
+2024-06-17 12:37:56,122 1 INFO prueba odoo.modules.loading: loading base/wizard/base_export_language_views.xml 
+2024-06-17 12:37:56,141 1 INFO prueba odoo.modules.loading: loading base/wizard/base_partner_merge_views.xml 
+2024-06-17 12:37:56,161 1 INFO prueba odoo.modules.loading: loading base/data/ir_demo_failure_data.xml 
+2024-06-17 12:37:56,181 1 INFO prueba odoo.modules.loading: loading base/views/ir_profile_views.xml 
+2024-06-17 12:37:56,212 1 INFO prueba odoo.modules.loading: loading base/views/res_company_views.xml 
+2024-06-17 12:37:56,242 1 INFO prueba odoo.modules.loading: loading base/views/res_lang_views.xml 
+2024-06-17 12:37:56,273 1 INFO prueba odoo.modules.loading: loading base/views/res_partner_views.xml 
+2024-06-17 12:37:56,413 1 INFO prueba odoo.modules.loading: loading base/views/res_bank_views.xml 
+2024-06-17 12:37:56,462 1 INFO prueba odoo.modules.loading: loading base/views/res_country_views.xml 
+2024-06-17 12:37:56,524 1 INFO prueba odoo.modules.loading: loading base/views/res_currency_views.xml 
+2024-06-17 12:37:56,577 1 INFO prueba odoo.modules.loading: loading base/views/res_users_views.xml 
+2024-06-17 12:37:56,735 1 INFO prueba odoo.modules.loading: loading base/views/res_users_identitycheck_views.xml 
+2024-06-17 12:37:56,756 1 INFO prueba odoo.modules.loading: loading base/views/ir_property_views.xml 
+2024-06-17 12:37:56,790 1 INFO prueba odoo.modules.loading: loading base/views/res_config_settings_views.xml 
+2024-06-17 12:37:56,802 1 INFO prueba odoo.modules.loading: loading base/views/report_paperformat_views.xml 
+2024-06-17 12:37:56,842 1 INFO prueba odoo.modules.loading: loading base/security/ir.model.access.csv 
+2024-06-17 12:37:57,009 1 INFO prueba odoo.modules.loading: Module base: loading demo 
+2024-06-17 12:37:57,010 1 INFO prueba odoo.modules.loading: loading base/data/res_users_demo.xml 
+2024-06-17 12:37:58,431 1 INFO prueba odoo.modules.loading: loading base/data/res_partner_bank_demo.xml 
+2024-06-17 12:37:58,446 1 INFO prueba odoo.modules.loading: loading base/data/res_currency_demo.xml 
+2024-06-17 12:37:58,455 1 INFO prueba odoo.modules.loading: loading base/data/res_currency_rate_demo.xml 
+2024-06-17 12:37:58,908 1 INFO prueba odoo.modules.loading: loading base/data/res_bank_demo.xml 
+2024-06-17 12:37:58,917 1 INFO prueba odoo.modules.loading: loading base/data/res_partner_demo.xml 
+2024-06-17 12:37:59,226 1 INFO prueba odoo.modules.loading: loading base/data/res_partner_image_demo.xml 
+2024-06-17 12:37:59,404 1 INFO prueba odoo.addons.base.models.ir_module: module base: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base/i18n/es.po for language es_BO 
+2024-06-17 12:37:59,405 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base/i18n/es.po for language es_BO 
+2024-06-17 12:37:59,797 1 INFO prueba odoo.addons.base.models.ir_module: module base: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base/i18n/es_419.po for language es_BO 
+2024-06-17 12:37:59,798 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:00,145 1 INFO prueba odoo.addons.base.models.ir_module: module base: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:00,146 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:01,893 1 INFO prueba odoo.modules.loading: Module base loaded in 19.84s, 9095 queries (+9095 other) 
+2024-06-17 12:38:01,894 1 INFO prueba odoo.modules.loading: 1 modules loaded in 19.85s, 9095 queries (+9095 extra) 
+2024-06-17 12:38:02,014 1 INFO prueba odoo.addons.base.models.ir_module: module base: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base/i18n/es.po for language es_BO 
+2024-06-17 12:38:02,015 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base/i18n/es.po for language es_BO 
+2024-06-17 12:38:02,442 1 INFO prueba odoo.addons.base.models.ir_module: module base: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:02,443 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:02,766 1 INFO prueba odoo.addons.base.models.ir_module: module base: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:02,768 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:03,715 1 INFO prueba odoo.modules.loading: updating modules list 
+2024-06-17 12:38:03,717 1 INFO prueba odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2024-06-17 12:38:04,907 1 INFO prueba odoo.modules.loading: loading 11 modules... 
+2024-06-17 12:38:04,908 1 INFO prueba odoo.modules.loading: Loading module web (2/11) 
+2024-06-17 12:38:04,944 1 INFO prueba odoo.modules.registry: module web: creating or updating database tables 
+2024-06-17 12:38:05,795 1 INFO prueba odoo.modules.loading: loading web/security/ir.model.access.csv 
+2024-06-17 12:38:05,836 1 INFO prueba odoo.modules.loading: loading web/views/webclient_templates.xml 
+2024-06-17 12:38:05,909 1 INFO prueba odoo.modules.loading: loading web/views/report_templates.xml 
+2024-06-17 12:38:06,024 1 INFO prueba odoo.modules.loading: loading web/views/base_document_layout_views.xml 
+2024-06-17 12:38:06,048 1 INFO prueba odoo.modules.loading: loading web/views/partner_view.xml 
+2024-06-17 12:38:06,059 1 INFO prueba odoo.modules.loading: loading web/views/speedscope_template.xml 
+2024-06-17 12:38:06,069 1 INFO prueba odoo.modules.loading: loading web/views/neutralize_views.xml 
+2024-06-17 12:38:06,079 1 INFO prueba odoo.modules.loading: loading web/data/ir_attachment.xml 
+2024-06-17 12:38:06,107 1 INFO prueba odoo.modules.loading: loading web/data/report_layout.xml 
+2024-06-17 12:38:06,159 1 INFO prueba odoo.addons.base.models.ir_module: module web: loading translation file /usr/lib/python3/dist-packages/odoo/addons/web/i18n/es.po for language es_BO 
+2024-06-17 12:38:06,160 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/web/i18n/es.po for language es_BO 
+2024-06-17 12:38:06,466 1 INFO prueba odoo.addons.base.models.ir_module: module web: loading translation file /usr/lib/python3/dist-packages/odoo/addons/web/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:06,467 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/web/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:06,735 1 INFO prueba odoo.addons.base.models.ir_module: module web: loading translation file /usr/lib/python3/dist-packages/odoo/addons/web/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:06,736 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/web/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:06,964 1 INFO prueba odoo.modules.loading: Module web loaded in 2.06s, 1012 queries (+1012 other) 
+2024-06-17 12:38:06,965 1 INFO prueba odoo.modules.loading: Loading module auth_totp (3/11) 
+2024-06-17 12:38:07,003 1 INFO prueba odoo.modules.registry: module auth_totp: creating or updating database tables 
+2024-06-17 12:38:07,199 1 INFO prueba odoo.modules.loading: loading auth_totp/security/security.xml 
+2024-06-17 12:38:07,258 1 INFO prueba odoo.modules.loading: loading auth_totp/security/ir.model.access.csv 
+2024-06-17 12:38:07,275 1 INFO prueba odoo.modules.loading: loading auth_totp/data/ir_action_data.xml 
+2024-06-17 12:38:07,296 1 INFO prueba odoo.modules.loading: loading auth_totp/views/res_users_views.xml 
+2024-06-17 12:38:07,333 1 INFO prueba odoo.modules.loading: loading auth_totp/views/templates.xml 
+2024-06-17 12:38:07,342 1 INFO prueba odoo.modules.loading: loading auth_totp/wizard/auth_totp_wizard_views.xml 
+2024-06-17 12:38:07,359 1 INFO prueba odoo.addons.base.models.ir_module: module auth_totp: loading translation file /usr/lib/python3/dist-packages/odoo/addons/auth_totp/i18n/es.po for language es_BO 
+2024-06-17 12:38:07,360 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/auth_totp/i18n/es.po for language es_BO 
+2024-06-17 12:38:07,370 1 INFO prueba odoo.addons.base.models.ir_module: module auth_totp: loading translation file /usr/lib/python3/dist-packages/odoo/addons/auth_totp/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:07,371 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/auth_totp/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:07,414 1 INFO prueba odoo.modules.loading: Module auth_totp loaded in 0.45s, 185 queries (+185 other) 
+2024-06-17 12:38:07,415 1 INFO prueba odoo.modules.loading: Loading module base_import (4/11) 
+2024-06-17 12:38:07,479 1 INFO prueba odoo.modules.registry: module base_import: creating or updating database tables 
+2024-06-17 12:38:08,371 1 INFO prueba odoo.modules.loading: loading base_import/security/ir.model.access.csv 
+2024-06-17 12:38:08,400 1 INFO prueba odoo.addons.base.models.ir_module: module base_import: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base_import/i18n/es.po for language es_BO 
+2024-06-17 12:38:08,402 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base_import/i18n/es.po for language es_BO 
+2024-06-17 12:38:08,420 1 INFO prueba odoo.addons.base.models.ir_module: module base_import: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base_import/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:08,421 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base_import/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:08,433 1 INFO prueba odoo.addons.base.models.ir_module: module base_import: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base_import/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:08,434 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base_import/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:08,469 1 INFO prueba odoo.modules.loading: Module base_import loaded in 1.05s, 819 queries (+819 other) 
+2024-06-17 12:38:08,471 1 INFO prueba odoo.modules.loading: Loading module base_import_module (5/11) 
+2024-06-17 12:38:08,501 1 INFO prueba odoo.modules.registry: module base_import_module: creating or updating database tables 
+2024-06-17 12:38:08,683 1 INFO prueba odoo.modules.loading: loading base_import_module/security/ir.model.access.csv 
+2024-06-17 12:38:08,702 1 INFO prueba odoo.modules.loading: loading base_import_module/views/base_import_module_view.xml 
+2024-06-17 12:38:08,730 1 INFO prueba odoo.modules.loading: loading base_import_module/views/ir_module_views.xml 
+2024-06-17 12:38:08,790 1 INFO prueba odoo.addons.base.models.ir_module: module base_import_module: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base_import_module/i18n/es.po for language es_BO 
+2024-06-17 12:38:08,792 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base_import_module/i18n/es.po for language es_BO 
+2024-06-17 12:38:08,800 1 INFO prueba odoo.addons.base.models.ir_module: module base_import_module: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base_import_module/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:08,801 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base_import_module/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:08,809 1 INFO prueba odoo.addons.base.models.ir_module: module base_import_module: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base_import_module/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:08,810 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base_import_module/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:08,853 1 INFO prueba odoo.modules.loading: Module base_import_module loaded in 0.38s, 157 queries (+157 other) 
+2024-06-17 12:38:08,855 1 INFO prueba odoo.modules.loading: Loading module base_setup (6/11) 
+2024-06-17 12:38:08,882 1 INFO prueba odoo.modules.registry: module base_setup: creating or updating database tables 
+2024-06-17 12:38:08,966 1 INFO prueba odoo.modules.loading: loading base_setup/data/base_setup_data.xml 
+2024-06-17 12:38:08,975 1 INFO prueba odoo.modules.loading: loading base_setup/views/res_config_settings_views.xml 
+2024-06-17 12:38:09,016 1 INFO prueba odoo.modules.loading: loading base_setup/views/res_partner_views.xml 
+2024-06-17 12:38:09,034 1 INFO prueba odoo.addons.base.models.ir_module: module base_setup: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base_setup/i18n/es.po for language es_BO 
+2024-06-17 12:38:09,035 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base_setup/i18n/es.po for language es_BO 
+2024-06-17 12:38:09,048 1 INFO prueba odoo.addons.base.models.ir_module: module base_setup: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base_setup/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:09,049 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base_setup/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:09,059 1 INFO prueba odoo.addons.base.models.ir_module: module base_setup: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base_setup/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:09,061 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base_setup/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:09,102 1 INFO prueba odoo.modules.loading: Module base_setup loaded in 0.25s, 147 queries (+147 other) 
+2024-06-17 12:38:09,103 1 INFO prueba odoo.modules.loading: Loading module bus (7/11) 
+2024-06-17 12:38:09,149 1 INFO prueba odoo.modules.registry: module bus: creating or updating database tables 
+2024-06-17 12:38:09,352 1 INFO prueba odoo.modules.loading: loading bus/security/ir.model.access.csv 
+2024-06-17 12:38:09,384 1 INFO prueba odoo.addons.base.models.ir_module: module bus: loading translation file /usr/lib/python3/dist-packages/odoo/addons/bus/i18n/es.po for language es_BO 
+2024-06-17 12:38:09,386 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/bus/i18n/es.po for language es_BO 
+2024-06-17 12:38:09,395 1 INFO prueba odoo.addons.base.models.ir_module: module bus: loading translation file /usr/lib/python3/dist-packages/odoo/addons/bus/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:09,396 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/bus/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:09,402 1 INFO prueba odoo.addons.base.models.ir_module: module bus: loading translation file /usr/lib/python3/dist-packages/odoo/addons/bus/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:09,403 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/bus/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:09,427 1 INFO prueba odoo.modules.loading: Module bus loaded in 0.32s, 117 queries (+117 other) 
+2024-06-17 12:38:09,428 1 INFO prueba odoo.modules.loading: Loading module web_tour (8/11) 
+2024-06-17 12:38:09,452 1 INFO prueba odoo.modules.registry: module web_tour: creating or updating database tables 
+2024-06-17 12:38:09,524 1 INFO prueba odoo.modules.loading: loading web_tour/security/ir.model.access.csv 
+2024-06-17 12:38:09,543 1 INFO prueba odoo.modules.loading: loading web_tour/security/ir.rule.csv 
+2024-06-17 12:38:09,563 1 INFO prueba odoo.modules.loading: loading web_tour/views/tour_views.xml 
+2024-06-17 12:38:09,601 1 INFO prueba odoo.addons.base.models.ir_module: module web_tour: loading translation file /usr/lib/python3/dist-packages/odoo/addons/web_tour/i18n/es.po for language es_BO 
+2024-06-17 12:38:09,602 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/web_tour/i18n/es.po for language es_BO 
+2024-06-17 12:38:09,608 1 INFO prueba odoo.addons.base.models.ir_module: module web_tour: loading translation file /usr/lib/python3/dist-packages/odoo/addons/web_tour/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:09,609 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/web_tour/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:09,639 1 INFO prueba odoo.modules.loading: Module web_tour loaded in 0.21s, 111 queries (+111 other) 
+2024-06-17 12:38:09,640 1 INFO prueba odoo.modules.loading: Loading module iap (9/11) 
+2024-06-17 12:38:09,667 1 INFO prueba odoo.modules.registry: module iap: creating or updating database tables 
+2024-06-17 12:38:09,914 1 INFO prueba odoo.modules.loading: loading iap/security/ir.model.access.csv 
+2024-06-17 12:38:09,932 1 INFO prueba odoo.modules.loading: loading iap/security/ir_rule.xml 
+2024-06-17 12:38:09,944 1 INFO prueba odoo.modules.loading: loading iap/views/iap_views.xml 
+2024-06-17 12:38:09,975 1 INFO prueba odoo.modules.loading: loading iap/views/res_config_settings.xml 
+2024-06-17 12:38:10,001 1 INFO prueba odoo.addons.base.models.ir_module: module iap: loading translation file /usr/lib/python3/dist-packages/odoo/addons/iap/i18n/es.po for language es_BO 
+2024-06-17 12:38:10,003 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/iap/i18n/es.po for language es_BO 
+2024-06-17 12:38:10,012 1 INFO prueba odoo.addons.base.models.ir_module: module iap: loading translation file /usr/lib/python3/dist-packages/odoo/addons/iap/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:10,013 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/iap/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:10,017 1 INFO prueba odoo.addons.base.models.ir_module: module iap: loading translation file /usr/lib/python3/dist-packages/odoo/addons/iap/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:10,018 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/iap/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:10,059 1 INFO prueba odoo.modules.loading: Module iap loaded in 0.42s, 159 queries (+159 other) 
+2024-06-17 12:38:10,060 1 INFO prueba odoo.modules.loading: Loading module web_editor (10/11) 
+2024-06-17 12:38:10,147 1 INFO prueba odoo.modules.registry: module web_editor: creating or updating database tables 
+2024-06-17 12:38:11,044 1 INFO prueba odoo.modules.loading: loading web_editor/security/ir.model.access.csv 
+2024-06-17 12:38:11,059 1 INFO prueba odoo.modules.loading: loading web_editor/data/editor_assets.xml 
+2024-06-17 12:38:11,070 1 INFO prueba odoo.modules.loading: loading web_editor/views/editor.xml 
+2024-06-17 12:38:11,096 1 INFO prueba odoo.modules.loading: loading web_editor/views/snippets.xml 
+2024-06-17 12:38:11,147 1 INFO prueba odoo.addons.base.models.ir_module: module web_editor: loading translation file /usr/lib/python3/dist-packages/odoo/addons/web_editor/i18n/es.po for language es_BO 
+2024-06-17 12:38:11,149 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/web_editor/i18n/es.po for language es_BO 
+2024-06-17 12:38:11,184 1 INFO prueba odoo.addons.base.models.ir_module: module web_editor: loading translation file /usr/lib/python3/dist-packages/odoo/addons/web_editor/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:11,185 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/web_editor/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:11,274 1 INFO prueba odoo.modules.loading: Module web_editor loaded in 1.21s, 927 queries (+927 other) 
+2024-06-17 12:38:11,275 1 INFO prueba odoo.modules.loading: Loading module web_unsplash (11/11) 
+2024-06-17 12:38:11,308 1 INFO prueba odoo.modules.registry: module web_unsplash: creating or updating database tables 
+2024-06-17 12:38:11,388 1 INFO prueba odoo.modules.loading: loading web_unsplash/views/res_config_settings_view.xml 
+2024-06-17 12:38:11,419 1 INFO prueba odoo.addons.base.models.ir_module: module web_unsplash: loading translation file /usr/lib/python3/dist-packages/odoo/addons/web_unsplash/i18n/es.po for language es_BO 
+2024-06-17 12:38:11,420 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/web_unsplash/i18n/es.po for language es_BO 
+2024-06-17 12:38:11,426 1 INFO prueba odoo.addons.base.models.ir_module: module web_unsplash: loading translation file /usr/lib/python3/dist-packages/odoo/addons/web_unsplash/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:11,427 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/web_unsplash/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:11,448 1 INFO prueba odoo.modules.loading: Module web_unsplash loaded in 0.17s, 100 queries (+100 other) 
+2024-06-17 12:38:11,449 1 INFO prueba odoo.modules.loading: 11 modules loaded in 6.54s, 3734 queries (+3734 extra) 
+2024-06-17 12:38:11,817 1 INFO prueba odoo.modules.loading: Modules loaded. 
+2024-06-17 12:38:11,823 1 INFO prueba odoo.modules.registry: Registry loaded in 30.320s 
+2024-06-17 12:38:11,832 1 INFO prueba odoo.addons.base.models.ir_module: module base: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base/i18n/es.po for language es_BO 
+2024-06-17 12:38:11,833 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base/i18n/es.po for language es_BO 
+2024-06-17 12:38:12,187 1 INFO prueba odoo.addons.base.models.ir_module: module base: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:12,189 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:12,554 1 INFO prueba odoo.addons.base.models.ir_module: module base: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:12,555 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:12,809 1 INFO prueba odoo.addons.base.models.ir_module: module web: loading translation file /usr/lib/python3/dist-packages/odoo/addons/web/i18n/es.po for language es_BO 
+2024-06-17 12:38:12,810 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/web/i18n/es.po for language es_BO 
+2024-06-17 12:38:13,082 1 INFO prueba odoo.addons.base.models.ir_module: module web: loading translation file /usr/lib/python3/dist-packages/odoo/addons/web/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:13,084 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/web/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:13,373 1 INFO prueba odoo.addons.base.models.ir_module: module web: loading translation file /usr/lib/python3/dist-packages/odoo/addons/web/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:13,374 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/web/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:13,518 1 INFO prueba odoo.addons.base.models.ir_module: module auth_totp: loading translation file /usr/lib/python3/dist-packages/odoo/addons/auth_totp/i18n/es.po for language es_BO 
+2024-06-17 12:38:13,519 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/auth_totp/i18n/es.po for language es_BO 
+2024-06-17 12:38:13,526 1 INFO prueba odoo.addons.base.models.ir_module: module auth_totp: loading translation file /usr/lib/python3/dist-packages/odoo/addons/auth_totp/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:13,527 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/auth_totp/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:13,534 1 INFO prueba odoo.addons.base.models.ir_module: module base_import: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base_import/i18n/es.po for language es_BO 
+2024-06-17 12:38:13,535 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base_import/i18n/es.po for language es_BO 
+2024-06-17 12:38:13,548 1 INFO prueba odoo.addons.base.models.ir_module: module base_import: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base_import/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:13,549 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base_import/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:13,559 1 INFO prueba odoo.addons.base.models.ir_module: module base_import: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base_import/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:13,560 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base_import/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:13,572 1 INFO prueba odoo.addons.base.models.ir_module: module base_import_module: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base_import_module/i18n/es.po for language es_BO 
+2024-06-17 12:38:13,573 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base_import_module/i18n/es.po for language es_BO 
+2024-06-17 12:38:13,578 1 INFO prueba odoo.addons.base.models.ir_module: module base_import_module: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base_import_module/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:13,579 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base_import_module/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:13,585 1 INFO prueba odoo.addons.base.models.ir_module: module base_import_module: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base_import_module/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:13,586 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base_import_module/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:13,591 1 INFO prueba odoo.addons.base.models.ir_module: module base_setup: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base_setup/i18n/es.po for language es_BO 
+2024-06-17 12:38:13,593 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base_setup/i18n/es.po for language es_BO 
+2024-06-17 12:38:13,602 1 INFO prueba odoo.addons.base.models.ir_module: module base_setup: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base_setup/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:13,604 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base_setup/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:13,614 1 INFO prueba odoo.addons.base.models.ir_module: module base_setup: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base_setup/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:13,615 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base_setup/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:13,621 1 INFO prueba odoo.addons.base.models.ir_module: module bus: loading translation file /usr/lib/python3/dist-packages/odoo/addons/bus/i18n/es.po for language es_BO 
+2024-06-17 12:38:13,622 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/bus/i18n/es.po for language es_BO 
+2024-06-17 12:38:13,626 1 INFO prueba odoo.addons.base.models.ir_module: module bus: loading translation file /usr/lib/python3/dist-packages/odoo/addons/bus/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:13,628 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/bus/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:13,632 1 INFO prueba odoo.addons.base.models.ir_module: module bus: loading translation file /usr/lib/python3/dist-packages/odoo/addons/bus/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:13,633 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/bus/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:13,637 1 INFO prueba odoo.addons.base.models.ir_module: module iap: loading translation file /usr/lib/python3/dist-packages/odoo/addons/iap/i18n/es.po for language es_BO 
+2024-06-17 12:38:13,639 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/iap/i18n/es.po for language es_BO 
+2024-06-17 12:38:13,644 1 INFO prueba odoo.addons.base.models.ir_module: module iap: loading translation file /usr/lib/python3/dist-packages/odoo/addons/iap/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:13,645 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/iap/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:13,650 1 INFO prueba odoo.addons.base.models.ir_module: module iap: loading translation file /usr/lib/python3/dist-packages/odoo/addons/iap/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:13,651 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/iap/i18n/es_BO.po for language es_BO 
+2024-06-17 12:38:13,656 1 INFO prueba odoo.addons.base.models.ir_module: module web_editor: loading translation file /usr/lib/python3/dist-packages/odoo/addons/web_editor/i18n/es.po for language es_BO 
+2024-06-17 12:38:13,656 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/web_editor/i18n/es.po for language es_BO 
+2024-06-17 12:38:13,693 1 INFO prueba odoo.addons.base.models.ir_module: module web_editor: loading translation file /usr/lib/python3/dist-packages/odoo/addons/web_editor/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:13,695 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/web_editor/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:13,744 1 INFO prueba odoo.addons.base.models.ir_module: module web_tour: loading translation file /usr/lib/python3/dist-packages/odoo/addons/web_tour/i18n/es.po for language es_BO 
+2024-06-17 12:38:13,746 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/web_tour/i18n/es.po for language es_BO 
+2024-06-17 12:38:13,750 1 INFO prueba odoo.addons.base.models.ir_module: module web_tour: loading translation file /usr/lib/python3/dist-packages/odoo/addons/web_tour/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:13,751 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/web_tour/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:13,756 1 INFO prueba odoo.addons.base.models.ir_module: module web_unsplash: loading translation file /usr/lib/python3/dist-packages/odoo/addons/web_unsplash/i18n/es.po for language es_BO 
+2024-06-17 12:38:13,756 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/web_unsplash/i18n/es.po for language es_BO 
+2024-06-17 12:38:13,762 1 INFO prueba odoo.addons.base.models.ir_module: module web_unsplash: loading translation file /usr/lib/python3/dist-packages/odoo/addons/web_unsplash/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:13,764 1 INFO prueba odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/web_unsplash/i18n/es_419.po for language es_BO 
+2024-06-17 12:38:15,399 1 INFO prueba odoo.addons.base.models.res_users: Login successful for db:prueba login:yamil@gmail.com from 172.22.0.1 
+2024-06-17 12:38:15,415 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:38:15] "POST /web/database/create HTTP/1.1" 303 - 18718 22.757 18.984
+2024-06-17 12:38:15,446 1 INFO prueba odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-17 12:38:15,482 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:38:15] "GET /web HTTP/1.1" 303 - 9 0.011 0.033
+2024-06-17 12:38:15,813 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:38:15] "GET /web/login HTTP/1.1" 200 - 53 0.034 0.281
+2024-06-17 12:38:16,225 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:38:16] "GET /web/binary/company_logo HTTP/1.1" 200 - 5 0.008 0.325
+2024-06-17 12:38:17,972 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:38:17] "GET /web/service-worker.js HTTP/1.1" 200 - 5 0.057 0.038
+2024-06-17 12:38:18,241 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:38:18] "GET /web/webclient/translations/1718627896309 HTTP/1.1" 200 - 7 0.005 1.921
+2024-06-17 12:39:01,952 1 INFO prueba odoo.addons.base.models.ir_cron: Starting job `Base: Auto-vacuum internal data`. 
+2024-06-17 12:39:02,055 1 INFO prueba odoo.addons.base.models.ir_attachment: filestore gc 55 checked, 0 removed 
+2024-06-17 12:39:02,174 1 INFO prueba odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2024-06-17 12:39:02,302 1 INFO prueba odoo.addons.auth_totp.models.auth_totp: GC'd 0 totp devices entries 
+2024-06-17 12:39:02,353 1 INFO prueba odoo.addons.base.models.ir_cron: Job done: `Base: Auto-vacuum internal data` (0.400s). 
+2024-06-17 12:39:02,379 1 INFO prueba odoo.addons.base.models.ir_cron: Starting job `Base: Portal Users Deletion`. 
+2024-06-17 12:39:02,391 1 INFO prueba odoo.addons.base.models.ir_cron: Job done: `Base: Portal Users Deletion` (0.010s). 
+2024-06-17 12:39:45,547 1 INFO prueba odoo.addons.base.models.res_users: Login successful for db:prueba login:yamil@gmail.com from 172.22.0.1 
+2024-06-17 12:39:45,564 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:45] "POST /web/login HTTP/1.1" 303 - 32 0.065 0.576
+2024-06-17 12:39:45,987 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:45] "GET /web HTTP/1.1" 200 - 62 0.141 0.272
+2024-06-17 12:39:46,209 1 INFO prueba odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/ba037c6/bus.websocket_worker_assets.min.js (id:188) 
+2024-06-17 12:39:46,217 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:46] "GET /bus/websocket_worker_bundle?v=1.0.7 HTTP/1.1" 200 - 10 0.010 0.036
+2024-06-17 12:39:46,237 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:46] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.012 0.012
+2024-06-17 12:39:46,261 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:46] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 200 - 9 0.009 0.025
+2024-06-17 12:39:46,267 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:46] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.006
+2024-06-17 12:39:46,278 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-06-17 12:39:46,349 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:46] "POST /web/action/load HTTP/1.1" 200 - 9 0.047 0.078
+2024-06-17 12:39:46,484 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:46] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 48 0.072 0.041
+2024-06-17 12:39:46,528 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:46] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.011
+2024-06-17 12:39:46,585 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:46] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 39 0.044 0.022
+2024-06-17 12:39:46,677 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:46] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.021 0.133
+2024-06-17 12:39:48,459 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:48] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.004
+2024-06-17 12:39:51,882 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:51] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.003 0.009
+2024-06-17 12:39:51,914 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:51] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.007 0.031
+2024-06-17 12:39:51,935 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:51] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 36 0.037 0.023
+2024-06-17 12:39:53,424 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:53] "POST /web/action/load HTTP/1.1" 200 - 8 0.012 0.009
+2024-06-17 12:39:53,459 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:53] "POST /web/dataset/call_kw/res.config.settings/get_views HTTP/1.1" 200 - 7 0.005 0.013
+2024-06-17 12:39:53,549 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:53] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 27 0.033 0.041
+2024-06-17 12:39:53,591 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:53] "POST /base_setup/demo_active HTTP/1.1" 200 - 2 0.002 0.004
+2024-06-17 12:39:53,607 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:53] "POST /base_setup/data HTTP/1.1" 200 - 6 0.006 0.004
+2024-06-17 12:39:55,269 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:55] "GET /web?debug=1 HTTP/1.1" 200 - 22 0.016 0.031
+2024-06-17 12:39:55,358 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:55] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 5 0.005 0.008
+2024-06-17 12:39:55,365 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:55] "GET /bus/websocket_worker_bundle?v=1.0.7 HTTP/1.1" 304 - 3 0.003 0.006
+2024-06-17 12:39:55,411 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:55] "GET /websocket HTTP/1.1" 101 - 1 0.003 0.009
+2024-06-17 12:39:55,412 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:55] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.010 0.016
+2024-06-17 12:39:55,431 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:55] "POST /web/action/load HTTP/1.1" 200 - 9 0.029 0.013
+2024-06-17 12:39:55,462 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:55] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 2 0.002 0.008
+2024-06-17 12:39:55,484 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:55] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.002 0.006
+2024-06-17 12:39:55,529 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:55] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.007 0.042
+2024-06-17 12:39:55,558 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:55] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.052 0.030
+2024-06-17 12:39:56,488 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:56] "POST /web/action/load HTTP/1.1" 200 - 8 0.006 0.011
+2024-06-17 12:39:56,537 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:56] "POST /web/dataset/call_kw/base.module.update/get_views HTTP/1.1" 200 - 9 0.008 0.012
+2024-06-17 12:39:56,559 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:56] "POST /web/dataset/call_kw/base.module.update/onchange HTTP/1.1" 200 - 2 0.002 0.004
+2024-06-17 12:39:57,279 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:57] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.005
+2024-06-17 12:39:57,515 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:57] "POST /web/dataset/call_kw/base.module.update/web_save HTTP/1.1" 200 - 5 0.011 0.008
+2024-06-17 12:39:57,534 1 INFO prueba odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user yamil@gmail.com #2 via 172.22.0.1 
+2024-06-17 12:39:58,205 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:39:58] "POST /web/dataset/call_button HTTP/1.1" 200 - 1305 0.381 0.295
+2024-06-17 12:40:00,434 1 INFO prueba odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_install on ['Academico'] to user yamil@gmail.com #2 via 172.22.0.1 
+2024-06-17 12:40:00,435 1 INFO prueba odoo.addons.base.models.ir_module: User #2 triggered module installation 
+2024-06-17 12:40:00,437 1 INFO prueba odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['Academico'] to user yamil@gmail.com #2 via 172.22.0.1 
+2024-06-17 12:40:00,520 1 INFO prueba odoo.modules.loading: loading 1 modules... 
+2024-06-17 12:40:00,529 1 INFO prueba odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-17 12:40:00,550 1 INFO prueba odoo.modules.loading: updating modules list 
+2024-06-17 12:40:00,553 1 INFO prueba odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.22.0.1 
+2024-06-17 12:40:01,447 1 INFO prueba odoo.modules.loading: loading 11 modules... 
+2024-06-17 12:40:01,458 1 INFO prueba odoo.modules.loading: 11 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-17 12:40:01,460 1 INFO prueba odoo.modules.loading: loading 12 modules... 
+2024-06-17 12:40:01,462 1 INFO prueba odoo.modules.loading: Loading module academico (2/12) 
+2024-06-17 12:40:01,915 1 WARNING prueba odoo.fields: Field academico.profesor.ci: unknown parameter 'unique', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-06-17 12:40:01,921 1 INFO prueba odoo.modules.registry: module academico: creating or updating database tables 
+2024-06-17 12:40:02,296 1 ERROR prueba odoo.schema: Table 'academico_nota': unable to add constraint 'academico_nota_check_notas_limit' as CHECK(_check_notas_limit()) 
+2024-06-17 12:40:02,345 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (notas_materias_trimestres, nota_ids) of academico.boletin() have the same label: Notas. [Modules: academico and academico] 
+2024-06-17 12:40:02,346 1 WARNING prueba odoo.addons.base.models.ir_model: Two fields (notas_id, nota_ids) of academico.boletin() have the same label: Notas. [Modules: academico and academico] 
+2024-06-17 12:40:02,747 1 INFO prueba odoo.modules.loading: loading academico/security/ir.model.access.csv 
+2024-06-17 12:40:02,822 1 INFO prueba odoo.modules.loading: loading academico/views/views.xml 
+2024-06-17 12:40:02,882 1 INFO prueba odoo.modules.loading: loading academico/views/estudiante.xml 
+2024-06-17 12:40:02,951 1 INFO prueba odoo.modules.loading: loading academico/views/profesor.xml 
+2024-06-17 12:40:03,017 1 INFO prueba odoo.modules.loading: loading academico/views/materia.xml 
+2024-06-17 12:40:03,067 1 INFO prueba odoo.modules.loading: loading academico/views/horario.xml 
+2024-06-17 12:40:03,108 1 INFO prueba odoo.modules.loading: loading academico/views/aula.xml 
+2024-06-17 12:40:03,162 1 INFO prueba odoo.modules.loading: loading academico/views/curso.xml 
+2024-06-17 12:40:03,224 1 INFO prueba odoo.modules.loading: loading academico/views/nota.xml 
+2024-06-17 12:40:03,284 1 INFO prueba odoo.modules.loading: loading academico/views/boletin.xml 
+2024-06-17 12:40:03,336 1 INFO prueba odoo.modules.loading: Module academico: loading demo 
+2024-06-17 12:40:03,338 1 INFO prueba odoo.modules.loading: loading academico/demo/demo.xml 
+2024-06-17 12:40:03,425 1 INFO prueba odoo.modules.loading: Module academico loaded in 1.96s, 498 queries (+498 other) 
+2024-06-17 12:40:03,427 1 INFO prueba odoo.modules.loading: 12 modules loaded in 1.96s, 498 queries (+498 extra) 
+2024-06-17 12:40:03,448 1 WARNING prueba odoo.fields: Field academico.profesor.ci: unknown parameter 'unique', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-06-17 12:40:03,470 1 WARNING prueba odoo.fields: Field academico.profesor.ci: unknown parameter 'unique', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-06-17 12:40:03,760 1 INFO prueba odoo.modules.loading: Modules loaded. 
+2024-06-17 12:40:03,765 1 INFO prueba odoo.modules.registry: Registry loaded in 3.282s 
+2024-06-17 12:40:03,766 1 INFO prueba odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-06-17 12:40:03,775 1 INFO prueba odoo.modules.registry: Registry changed, signaling through the database 
+2024-06-17 12:40:03,778 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:40:03] "POST /web/dataset/call_button HTTP/1.1" 200 - 2265 1.896 1.456
+2024-06-17 12:40:03,792 1 INFO prueba odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-17 12:40:03,911 1 WARNING prueba odoo.modules.module: Missing `license` key in manifest for 'academico', defaulting to LGPL-3 
+2024-06-17 12:40:03,976 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:40:03] "GET /web HTTP/1.1" 200 - 69 0.052 0.136
+2024-06-17 12:40:04,061 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:40:04] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.007 0.009
+2024-06-17 12:40:04,086 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:40:04] "GET /bus/websocket_worker_bundle?v=1.0.7 HTTP/1.1" 304 - 4 0.024 0.008
+2024-06-17 12:40:04,124 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:40:04] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.004
+2024-06-17 12:40:06,127 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:40:06] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.004
+2024-06-17 12:40:54,962 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:40:54] "POST /web/action/load HTTP/1.1" 200 - 9 0.011 0.016
+2024-06-17 12:40:54,981 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:40:54] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.021 0.023
+2024-06-17 12:40:55,031 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:40:55] "POST /web/dataset/call_kw/academico.estudiante/get_views HTTP/1.1" 200 - 26 0.017 0.027
+2024-06-17 12:40:55,056 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:40:55] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.002 0.004
+2024-06-17 12:40:55,061 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:40:55] "POST /web/dataset/call_kw/academico.estudiante/web_search_read HTTP/1.1" 200 - 3 0.005 0.007
+2024-06-17 12:40:57,980 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-06-17 12:40:57,981 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-06-17 12:40:58,107 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
+2024-06-17 12:45:34,702 1 INFO ? odoo: Odoo version 17.0-20240603 
+2024-06-17 12:45:34,705 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-06-17 12:45:34,706 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-06-17 12:45:34,706 1 INFO ? odoo: database: odoo@db:5432 
+2024-06-17 12:45:34,849 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-06-17 12:45:35,226 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on acdb812938e5:8069 
+2024-06-17 12:45:40,821 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'academico', defaulting to LGPL-3 
+2024-06-17 12:45:41,046 1 INFO prueba odoo.modules.loading: loading 1 modules... 
+2024-06-17 12:45:41,054 1 INFO prueba odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-17 12:45:41,063 1 INFO prueba odoo.modules.loading: loading 12 modules... 
+2024-06-17 12:45:41,284 1 INFO prueba odoo.modules.loading: 12 modules loaded in 0.22s, 0 queries (+0 extra) 
+2024-06-17 12:45:41,362 1 WARNING prueba odoo.fields: Field academico.profesor.ci: unknown parameter 'unique', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-06-17 12:45:41,373 1 INFO prueba odoo.modules.loading: Modules loaded. 
+2024-06-17 12:45:41,402 1 INFO prueba odoo.modules.registry: Registry loaded in 0.578s 
+2024-06-17 12:45:41,405 1 INFO prueba odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-17 12:45:41,557 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:45:41] "POST /web/dataset/call_kw/academico.estudiante/web_search_read HTTP/1.1" 200 - 25 0.272 1.463
+2024-06-17 12:45:43,989 1 INFO prueba werkzeug: 172.22.0.1 - - [17/Jun/2024 12:45:43] "POST /web/dataset/call_kw/academico.estudiante/web_search_read HTTP/1.1" 200 - 2 0.001 0.004
+2024-06-17 12:45:54,672 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-06-17 12:45:54,677 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-06-17 12:45:55,003 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 3 connections  

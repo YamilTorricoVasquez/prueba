@@ -10,7 +10,11 @@ DB_USER=${DB_USER:-odoo}
 DB_PASSWORD=${DB_PASSWORD:-myodoo}
 DB_NAME=${DB_NAME:-postgres}
 
-/usr/local/bin/wait-for-psql.py $DB_HOST $DB_PORT $DB_USER $DB_PASSWORD $DB_NAME
+# Esperar hasta que PostgreSQL esté disponible
+until PGPASSWORD=$DB_PASSWORD psql -h $DB_HOST -p $DB_PORT -U $DB_USER -d $DB_NAME -c '\q'; do
+    echo "PostgreSQL no está disponible. Reintentando en 1 segundo..."
+    sleep 1
+done
 
 echo "PostgreSQL está disponible. Iniciando Odoo..."
 
