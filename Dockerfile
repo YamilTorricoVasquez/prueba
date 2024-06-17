@@ -3,9 +3,8 @@ FROM odoo:17.0
 # Copiar los archivos de configuración
 COPY ./entrypoint.sh /
 COPY ./config_odoo/odoo.conf /etc/odoo/
+# Copiar el script para esperar a PostgreSQL
 COPY wait-for-psql.py /wait-for-psql.py
-COPY entrypoint.sh /entrypoint.sh
-# Asignar permisos y montar los volúmenes
 USER root
 RUN chmod +x /entrypoint.sh \
     && chown odoo:odoo /etc/odoo/odoo.conf \
