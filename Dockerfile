@@ -10,8 +10,9 @@ RUN apt-get update && \
     update-locale LANG=en_US.UTF-8 && \
     apt-get install -y python3-pip && \
     pip install --upgrade pip && \
-    apt-get install -y libpq-dev && \  
-    pip install psycopg2-binary && \
+    apt-get install -y libpq-dev && \
+    apt-get install -y build-essential && \  
+    pip install --no-cache-dir psycopg2-binary && \
     apt-get clean
 
 # Cambiar nuevamente al usuario odoo
