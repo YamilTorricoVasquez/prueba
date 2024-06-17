@@ -5,16 +5,16 @@ from urllib.parse import urlparse
 from time import sleep
 
 if __name__ == "__main__":
-    url = urlparse(sys.argv[1])
-    timeout = int(sys.argv[3]) if len(sys.argv) > 3 else 30
+    db_host = sys.argv[1]
+    timeout = int(sys.argv[2]) if len(sys.argv) > 2 else 30
     while timeout > 0:
         try:
             conn = psycopg2.connect(
-                dbname=url.path[1:],
-                user=url.username,
-                password=url.password,
-                host=url.hostname,
-                port=url.port
+                dbname="postgres",
+                user="odoo",
+                password="myodoo",
+                host=db_host,
+                port=5432
             )
             conn.close()
             sys.exit(0)
