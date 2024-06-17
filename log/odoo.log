@@ -430,3 +430,29 @@
 2024-06-17 00:16:27,573 1 INFO ? odoo.service.server: Initiating shutdown 
 2024-06-17 00:16:27,586 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
 2024-06-17 00:16:27,989 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 4 connections  
+2024-06-17 00:16:35,802 1 INFO ? odoo: Odoo version 17.0-20240603 
+2024-06-17 00:16:35,803 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-06-17 00:16:35,803 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/17.0', '/mnt/extra-addons'] 
+2024-06-17 00:16:35,804 1 INFO ? odoo: database: odoo@odoo_dev-db-1:5432 
+2024-06-17 00:16:35,995 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-06-17 00:16:36,385 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 588118857abb:8069 
+2024-06-17 00:16:38,604 1 INFO prueba odoo.modules.loading: loading 1 modules... 
+2024-06-17 00:16:38,615 1 INFO prueba odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-06-17 00:16:38,626 1 WARNING prueba odoo.modules.module: Missing `license` key in manifest for 'academico', defaulting to LGPL-3 
+2024-06-17 00:16:38,643 1 INFO prueba odoo.modules.loading: loading 12 modules... 
+2024-06-17 00:16:38,976 1 INFO prueba odoo.modules.loading: 12 modules loaded in 0.33s, 0 queries (+0 extra) 
+2024-06-17 00:16:39,018 1 WARNING prueba odoo.fields: Field academico.profesor.ci: unknown parameter 'unique', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-06-17 00:16:39,027 1 INFO prueba odoo.modules.loading: Modules loaded. 
+2024-06-17 00:16:39,032 1 INFO prueba odoo.modules.registry: Registry loaded in 0.473s 
+2024-06-17 00:16:39,034 1 INFO prueba odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-17 00:16:40,425 1 INFO prueba werkzeug: 172.28.0.1 - - [17/Jun/2024 00:16:40] "GET /websocket HTTP/1.1" 101 - 1 0.002 0.027
+2024-06-17 00:16:40,441 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-06-17 00:16:41,814 1 WARNING prueba odoo.modules.module: Missing `license` key in manifest for 'academico', defaulting to LGPL-3 
+2024-06-17 00:16:42,033 1 INFO prueba werkzeug: 172.28.0.1 - - [17/Jun/2024 00:16:42] "GET /web HTTP/1.1" 200 - 84 0.184 3.291
+2024-06-17 00:16:42,252 1 INFO prueba werkzeug: 172.28.0.1 - - [17/Jun/2024 00:16:42] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.004 0.007
+2024-06-17 00:16:42,301 1 INFO prueba werkzeug: 172.28.0.1 - - [17/Jun/2024 00:16:42] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.009 0.014
+2024-06-17 00:16:42,924 1 INFO prueba werkzeug: 172.28.0.1 - - [17/Jun/2024 00:16:42] "POST /web/action/load HTTP/1.1" 200 - 9 0.008 0.665
+2024-06-17 00:16:42,973 1 INFO prueba werkzeug: 172.28.0.1 - - [17/Jun/2024 00:16:42] "POST /web/dataset/call_kw/academico.estudiante/get_views HTTP/1.1" 200 - 26 0.014 0.017
+2024-06-17 00:16:42,994 1 INFO prueba werkzeug: 172.28.0.1 - - [17/Jun/2024 00:16:42] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.001 0.002
+2024-06-17 00:16:42,996 1 INFO prueba werkzeug: 172.28.0.1 - - [17/Jun/2024 00:16:42] "POST /web/dataset/call_kw/academico.estudiante/web_search_read HTTP/1.1" 200 - 3 0.003 0.004
+2024-06-17 00:16:43,845 1 INFO prueba werkzeug: 172.28.0.1 - - [17/Jun/2024 00:16:43] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.002
