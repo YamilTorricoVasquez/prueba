@@ -1,15 +1,24 @@
 FROM odoo:17.0
 
-# Instalar psycopg2-binary si es necesario
+# Instalar psycopg2-binary y PostgreSQL
 USER root
-RUN pip install psycopg2-binary
+RUN pip install psycopg2-binary \
+    && apt-get update \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+       postgresql postgresql-contrib
+
+# Configurar PostgreSQL
+RUN service postgresql start \
+    && su - postgres -c "psql -c \"CREATE USER odoo WITH PASSWORD 'myodoo';\"" \
+    && su - postgres -c "psql -c \"CREATE DATABASE odoo OWNER odoo;\"" \
+    && su - postgres -c "psql -c \"ALTER USER odoo CREATEDB;\""
+
 # Copiar los archivos de configuración y scripts
 COPY ./entrypoint.sh /entrypoint.sh
 COPY ./config_odoo/odoo.conf /etc/odoo/odoo.conf
 COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py
 
 # Asignar permisos y montar los volúmenes
-USER root
 RUN chmod +x /entrypoint.sh \
     && chmod +x /usr/local/bin/wait-for-psql.py \
     && chown odoo:odoo /etc/odoo/odoo.conf \
