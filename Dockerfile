@@ -3,6 +3,9 @@ FROM odoo:17.0
 # Cambiar al usuario root para instalar paquetes
 USER root
 
+# Cambiar los servidores de repositorio y agregar un mirror
+RUN sed -i 's/archive.ubuntu.com/mirrors.aliyun.com/' /etc/apt/sources.list
+
 # Instalar locales
 RUN apt-get update --fix-missing && \
     apt-get install -y locales && \
@@ -13,9 +16,8 @@ RUN apt-get update --fix-missing && \
 RUN apt-get install -y python3-pip && \
     pip install --upgrade pip
 
-# Actualizar índice de paquetes e instalar libpq-dev
-RUN apt-get update && \
-    apt-get install -y libpq-dev && \
+# Instalar libpq-dev
+RUN apt-get install -y libpq-dev && \
     apt-get clean
 
 # Instalar psycopg2-binary
