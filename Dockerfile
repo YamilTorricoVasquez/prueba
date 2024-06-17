@@ -13,17 +13,13 @@ RUN apt-get update --fix-missing && \
 RUN apt-get install -y python3-pip && \
     pip install --upgrade pip
 
-# Instalar libpq-dev
-RUN apt-get install -y libpq-dev
-
-# Instalar build-essential
-RUN apt-get install -y build-essential
+# Actualizar índice de paquetes e instalar libpq-dev
+RUN apt-get update && \
+    apt-get install -y libpq-dev && \
+    apt-get clean
 
 # Instalar psycopg2-binary
 RUN pip install --no-cache-dir psycopg2-binary
-
-# Limpiar el sistema
-RUN apt-get clean
 
 # Cambiar nuevamente al usuario odoo
 USER odoo
