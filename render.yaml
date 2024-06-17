@@ -1,0 +1,7 @@
+services:
+  - name: odoo-postgres
+    env: docker-compose
+    build:
+      image: docker/compose:1.29.2
+      dockerfile: Dockerfile
+    shell: /bin/bash
