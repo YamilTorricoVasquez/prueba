@@ -3,7 +3,7 @@
 # Esperar a que PostgreSQL esté disponible
 echo "Esperando a que PostgreSQL esté disponible..."
 
-# Asigna valores predeterminados si no se han pasado como variables de entorno
+# Asignar valores predeterminados si no se han pasado como variables de entorno
 DB_HOST=${DB_HOST:-db}
 DB_PORT=${DB_PORT:-5432}
 DB_USER=${DB_USER:-odoo}
