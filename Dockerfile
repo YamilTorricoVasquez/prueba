@@ -16,8 +16,8 @@ RUN apt-get update --fix-missing && \
 RUN apt-get install -y python3-pip && \
     pip install --upgrade pip
 
-# Instalar libpq-dev
-RUN apt-get install -y libpq-dev && \
+# Instalar postgresql-server-dev-all en lugar de libpq-dev
+RUN apt-get install -y postgresql-server-dev-all && \
     apt-get clean
 
 # Instalar psycopg2-binary
