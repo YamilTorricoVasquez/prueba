@@ -17,7 +17,7 @@ services:
       - POSTGRES_HOST=db
       - USER=odoo
       - PASSWORD=myodoo
-    entrypoint: ["sh", "/entrypoint.sh"]  # Esto es importante para ejecutar el script de espera
+    entrypoint: ["/wait-for-psql.py", "db", "30", "--", "/entrypoint.sh", "odoo"]
   db:
     image: postgres:latest
     environment:
