@@ -3,7 +3,7 @@ FROM odoo:17.0
 # Copiar los archivos de configuración y scripts
 COPY ./entrypoint.sh /entrypoint.sh
 COPY ./config_odoo/odoo.conf /etc/odoo/odoo.conf
-COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py
+COPY ./wait-for-psql.py /usr/local/bin/wait-for-psql.py
 
 # Asignar permisos y montar los volúmenes
 USER root
