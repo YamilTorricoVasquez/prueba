@@ -20,6 +20,8 @@ services:
     entrypoint: ["/wait-for-psql.py", "db:5432", "30", "--", "/entrypoint.sh", "odoo"]  # Aquí se espera a que "db" esté disponible en el puerto 5432
   db:
     image: postgres:latest
+    ports:
+      - "5432:5432"
     environment:
       - POSTGRES_DB=postgres      
       - POSTGRES_PASSWORD=myodoo
