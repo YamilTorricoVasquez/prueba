@@ -11,13 +11,13 @@ services:
       - ./config_odoo:/etc/odoo
       - ./dev_addons:/mnt/extra-addons
       - ./log:/var/log/odoo
-       - ./entrypoint.sh:/entrypoint.sh  # Montar entrypoint.sh en el contenedor
+      - ./entrypoint.sh:/entrypoint.sh  # Montar entrypoint.sh en el contenedor
       - ./wait-for-psql.py:/wait-for-psql.py  # Montar wait-for-psql.py en el contenedor
     environment:
-      - POSTGRES_HOST=db
+      - POSTGRES_HOST=db  # Aquí se usa el nombre de servicio del contenedor de la base de datos
       - USER=odoo
       - PASSWORD=myodoo
-    entrypoint: ["/wait-for-psql.py", "db", "30", "--", "/entrypoint.sh", "odoo"]
+    entrypoint: ["/wait-for-psql.py", "db:5432", "30", "--", "/entrypoint.sh", "odoo"]  # Aquí se espera a que "db" esté disponible en el puerto 5432
   db:
     image: postgres:latest
     environment:
