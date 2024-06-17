@@ -1,41 +1,27 @@
 version: '3.1'
+
 services:
   web:
     image: odoo:17.0
-    depends_on:
-      - db
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_USER: odoo
+      DB_PASSWORD: myodoo
+      DB_NAME: postgres
     ports:
       - "8069:8069"
     volumes:
-      - odoo-web-data:/var/lib/odoo
+      - ./addons:/mnt/extra-addons
       - ./config_odoo:/etc/odoo
-      - ./dev_addons:/mnt/extra-addons
-      - ./log:/var/log/odoo
-      - ./entrypoint.sh:/entrypoint.sh  # Montar entrypoint.sh en el contenedor
-      - ./wait-for-psql.py:/wait-for-psql.py  # Montar wait-for-psql.py en el contenedor
-    environment:
-      - POSTGRES_HOST=db  # Aquí se usa el nombre de servicio del contenedor de la base de datos
-      - USER=odoo
-      - PASSWORD=myodoo
-    entrypoint: ["/wait-for-psql.py", "db:5432", "30", "--", "/entrypoint.sh", "odoo"]  # Aquí se espera a que "db" esté disponible en el puerto 5432
-    networks:
-      - odoo_network
+    depends_on:
+      - db
+
   db:
     image: postgres:latest
-    ports:
-      - "5432:5432"
     environment:
-      - POSTGRES_DB=postgres      
-      - POSTGRES_PASSWORD=myodoo
-      - POSTGRES_USER=odoo
-      - PGDATA=/var/lib/postgresql/data/pgdata
-    networks:
-      - odoo_network
+      POSTGRES_USER: odoo
+      POSTGRES_PASSWORD: myodoo
+      POSTGRES_DB: postgres
     volumes:
-      - odoo-db-data:/var/lib/postgresql/data/pgdata
-volumes:
-  odoo-web-data:
-  odoo-db-data:
-networks:
-  odoo_network:
-    driver: bridge
+      - ./postgres_data:/var/lib/postgresql/data

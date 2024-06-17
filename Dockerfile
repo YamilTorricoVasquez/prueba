@@ -1,17 +1,18 @@
 FROM odoo:17.0
 
-# Instalar psycopg2-binary y PostgreSQL
+# Instalar locales y psycopg2-binary
 USER root
-RUN pip install psycopg2-binary \
-    && apt-get update \
-    && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-       postgresql postgresql-contrib
+RUN apt-get update && \
+    apt-get install -y locales && \
+    locale-gen en_US.UTF-8 && \
+    update-locale LANG=en_US.UTF-8 && \
+    apt-get install -y python3-pip && \ 
+    pip install psycopg2-binary && \
+    apt-get clean
 
-# Configurar PostgreSQL
-RUN service postgresql start \
-    && su - postgres -c "psql -c \"CREATE USER odoo WITH PASSWORD 'myodoo';\"" \
-    && su - postgres -c "psql -c \"CREATE DATABASE odoo OWNER odoo;\"" \
-    && su - postgres -c "psql -c \"ALTER USER odoo CREATEDB;\""
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US:en
+ENV LC_ALL en_US.UTF-8
 
 # Copiar los archivos de configuración y scripts
 COPY ./entrypoint.sh /entrypoint.sh
