@@ -8,7 +8,13 @@ COPY ./config_odoo/odoo.conf /etc/odoo/odoo.conf
 EXPOSE 8069
 
 # Instalamos PostgreSQL y sus herramientas
-RUN apt-get update && apt-get install -y postgresql postgresql-contrib
+RUN apt-get update && \
+    apt-get install -y gnupg2 && \
+    apt-get install -y wget && \
+    wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add - && \
+    sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" >> /etc/apt/sources.list.d/pgdg.list' && \
+    apt-get update && \
+    apt-get install -y postgresql postgresql-contrib
 
 # Configuramos la base de datos PostgreSQL
 USER postgres
