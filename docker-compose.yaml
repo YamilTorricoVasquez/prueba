@@ -1,29 +1,29 @@
 version: '3.1'
-
 services:
   web:
     image: odoo:17.0
-    environment:
-      DB_HOST: db
-      DB_PORT: 5432
-      DB_USER: odoo
-      DB_PASSWORD: myodoo
-      DB_NAME: postgres
+    depends_on:
+      - db
     ports:
       - "8069:8069"
     volumes:
-      #- odoo-web-data:/var/lib/odoo
-      - ./dev_addons:/mnt/extra-addons
+      - odoo-web-data:/var/lib/odoo
       - ./config_odoo:/etc/odoo
-      - ./log:/var/log/odoo
-    depends_on:
-      - db
-
-  db:
-    image: postgres:latest
+      - ./dev_addons:/mnt/extra-addons
+       - ./log:/var/log/odoo
     environment:
-      POSTGRES_USER: odoo
-      POSTGRES_PASSWORD: myodoo
-      POSTGRES_DB: postgres
+      - HOST=db
+      - USER=odoo
+      - PASSWORD=myodoo
+  db:
+    image: postgres:14.3
+    environment:
+      - POSTGRES_DB=postgres      
+      - POSTGRES_PASSWORD=myodoo
+      - POSTGRES_USER=odoo
+      - PGDATA=/var/lib/postgresql/data/pgdata
     volumes:
-      - ./postgres_data:/var/lib/postgresql/data
+      - odoo-db-data:/var/lib/postgresql/data/pgdata
+volumes:
+  odoo-web-data:
+  odoo-db-data:
