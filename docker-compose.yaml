@@ -12,8 +12,10 @@ services:
     ports:
       - "8069:8069"
     volumes:
+      #- odoo-web-data:/var/lib/odoo
       - ./addons:/mnt/extra-addons
       - ./config_odoo:/etc/odoo
+      - ./log:/var/log/odoo
     depends_on:
       - db
 
