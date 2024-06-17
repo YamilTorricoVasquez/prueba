@@ -1,24 +1,20 @@
-# Utilizamos la imagen oficial de Fedora
-FROM fedora:latest
+# Utilizamos la imagen oficial de Odoo 17.0 como base
+FROM odoo:17.0
 
-# Instalamos Odoo desde el repositorio oficial de Odoo
-RUN dnf install -y odoo
-
-# Instalamos PostgreSQL
-RUN dnf install -y postgresql postgresql-server
-
-# Copiamos el archivo de configuración de Odoo
+# Copiamos los archivos de configuración de Odoo
 COPY ./config_odoo/odoo.conf /etc/odoo/odoo.conf
 
 # Exponemos el puerto de Odoo
 EXPOSE 8069
 
-# Inicializamos la base de datos de PostgreSQL
-RUN /usr/bin/postgresql-setup --initdb
+# Instalamos PostgreSQL y sus herramientas
+RUN dnf install -y postgresql-server postgresql-contrib && \
+    postgresql-setup --initdb
 
-# Habilitamos y arrancamos el servicio de PostgreSQL
-RUN systemctl enable postgresql
-RUN systemctl start postgresql
+# Configuramos la base de datos PostgreSQL
+USER postgres
+RUN /usr/bin/postgres --single -D /var/lib/pgsql/data -c config_file=/var/lib/pgsql/data/postgresql.conf <<< "CREATE USER odoo WITH SUPERUSER PASSWORD 'myodoo';" && \
+    /usr/bin/postgres --single -D /var/lib/pgsql/data -c config_file=/var/lib/pgsql/data/postgresql.conf <<< "CREATE DATABASE postgres OWNER odoo;"
 
-# Cambiamos al usuario odoo
+# Cambiamos nuevamente al usuario odoo
 USER odoo
